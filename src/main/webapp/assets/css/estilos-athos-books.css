@@ -1,0 +1,64 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Lobster-Regular;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face{
+    font-family: RubikDirt-Regular;
+    src: url(../fonts/RubikDirt-Regular.ttf);
+}
+header{
+    background-color: #3626a7;
+    color:white;
+    text-align: left;
+    padding-left: 15px;
+    height: 45px;
+    font-family: Lobster-Regular;
+    font-size: 30px;
+}
+
+.navbar{
+    height: 40px;
+    position: sticky;
+    background-color: #000103;
+    color: white;
+    font-family: Lobster-Regular;
+    padding: 5px;
+}
+.nav-item{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nav-item .nav-link:hover{
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+.nav-item .nav-link:focus{
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
+#nombre-entidad{
+    background-color: #3626a7;
+}
+#slider{
+    max-height: 700px;
+}
