@@ -16,12 +16,19 @@
         <link rel="stylesheet" type="text/css" href="../assets/css/pattern.min.css">
         <script type="text/javascript" src="../assets/js/bootstrap.bundle.js"></script>
         <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/js/FontAwesome.js"> </script>
+        <script src="../assets/js/FontAwesome.js"></script>
     </head>
     <body>
-        <header>
-            <p>Entidad</p>
-        </header>
+        
+            <div class="row">
+                <div class="col-12">
+                    <header>
+                        <p>Entidad</p>
+                    </header>
+                </div>
+            </div>
+      
+
         <jsp:include page="../WEB-INF/paginas/comunes/cabecera.jsp" />
         <main>
             <section id="actions" class="py-4 mb-4">
@@ -33,10 +40,10 @@
                     </div>
                 </div>
             </section>
-            
+
             <section id="nombre-entidad">
                 <div class="container mb-5 pb-5">
-                    
+
                     <div class="row">
                         <div class="col-12">
                             <div class="card">

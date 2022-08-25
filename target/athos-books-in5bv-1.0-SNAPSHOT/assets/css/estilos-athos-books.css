@@ -3,53 +3,67 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+}
+
+body{
+        background-color: white;
 }
 
 @font-face{
-    font-family: Lobster-Regular;
-    src: url(../fonts/Lobster-Regular.ttf);
+    font-family: Fraunces-VariableFont;
+    src: url(../fonts/Fraunces-VariableFont.ttf);
 }
 @font-face{
     font-family: RubikDirt-Regular;
     src: url(../fonts/RubikDirt-Regular.ttf);
 }
+
+@font-face{
+    font-family: Fraunces-VariableFont-VariableFont;
+    src: url(../fonts/Fraunces-VariableFont-VariableFont_SOFT,WONK,opsz,wght.ttf);
+}
 header{
     background-color: #3626a7;
     color:white;
-    text-align: left;
+    text-align: center;
     padding-left: 15px;
-    height: 45px;
-    font-family: Lobster-Regular;
-    font-size: 30px;
+    height: 60px;
+    font-family: Fraunces-VariableFont;
+    font-size: 3rem;
 }
 
 .navbar{
-    height: 40px;
-    position: sticky;
+    height: 60px;
     background-color: #000103;
     color: white;
-    font-family: Lobster-Regular;
+    font-family: Fraunces-VariableFont;
     padding: 5px;
 }
 .nav-item{
     color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .nav-item .nav-link{
+    animation: .5s;
     color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
 }
-
-.nav-item .nav-link:hover{
+.nav-link:hover{
+    animation: 0.5s;
     color: black;
     background-color: white;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: hand;
+    
 }
 .nav-item .nav-link:focus{
     color: black;
@@ -57,8 +71,20 @@ header{
     padding: 10px;
 }
 #nombre-entidad{
-    background-color: #3626a7;
+    background-color: white;
 }
 #slider{
-    max-height: 700px;
+    max-height: 800px;
+    background-color: white;
+
+}
+
+.carousel-item{
+    max-height: 800px;
+    height: 700px;
+}
+
+.carousel-slide{
+    max-height: 800px;
+    background-color: white;
 }
