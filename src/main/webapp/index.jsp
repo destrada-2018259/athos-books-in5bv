@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
@@ -23,8 +22,8 @@
         <jsp:include page="./WEB-INF/paginas/comunes/cabecera.jsp" />
 
         <main>
-            <section id="slider">
-                <div class="container">
+       
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
                             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -55,13 +54,6 @@
                                             <p>La iniciativa de Athos Books es de lectores para lectores.</p>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="./assets/images/imagen1.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Los mejores libros, en el mejor lugar</h5>
-                                            <p>La iniciativa de Athos Books es de lectores para lectores.</p>
-                                        </div>
-                                    </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -75,7 +67,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
         </main>
         <script type="text/javascript" src="./assets/js/script.js"></script>
     </body>

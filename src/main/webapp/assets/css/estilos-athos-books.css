@@ -32,12 +32,17 @@ header{
     font-family: Fraunces-VariableFont;
     font-size: 3rem;
 }
+.logo-header{
+    line-height: 60px;
+    font-size: 1.3rem;
+}
 
 .navbar{
     height: 60px;
     background-color: #000103;
     color: white;
     font-family: Fraunces-VariableFont;
+    font-size: 1.3rem;
     padding: 5px;
 }
 .nav-item{
@@ -73,6 +78,8 @@ header{
 #nombre-entidad{
     background-color: white;
 }
+/*
+
 #slider{
     max-height: 800px;
     background-color: white;
@@ -88,3 +95,4 @@ header{
     max-height: 800px;
     background-color: white;
 }
+*/
