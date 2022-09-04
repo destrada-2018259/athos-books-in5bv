@@ -18,10 +18,10 @@
                         Entidades
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/autores/autores.jsp">Autores</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletAutores?accion=listar">Autores</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/editoriales/editorial.jsp">Editoriales</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/clientes/cliente.jsp">Clientes</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/sucursales/sucursal.jsp">Sucursales</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletSucursales?accion=listar">Sucursales</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/proveedores/proveedor.jsp">Proveedores</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/horarios/horario.jsp">Horarios</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/libros/libro.jsp">Libros</a></li>
