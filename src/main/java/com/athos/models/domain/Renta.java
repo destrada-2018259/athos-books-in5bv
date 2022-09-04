@@ -6,11 +6,13 @@ package com.athos.models.domain;
  * @date 3/09/2022
  * @time 14:56:04 Carné 2021604 Código técnico: IN5BV Grupo: 1
  */
+import java.time.LocalDate;
+
 public class Renta {
 
     private int id;
-    private String fechaRenta;
-    private String fechaDevolucion;
+    private LocalDate fechaRenta;
+    private LocalDate fechaDevolucion;
     private int clienteId;
     private int libroId;
     private int sucursalId;
@@ -22,7 +24,7 @@ public class Renta {
         this.id = id;
     }
 
-    public Renta(String fechaRenta, String fechaDevolucion, int clienteId, int libroId, int sucursalId) {
+    public Renta(LocalDate fechaRenta, LocalDate fechaDevolucion, int clienteId, int libroId, int sucursalId) {
         this.fechaRenta = fechaRenta;
         this.fechaDevolucion = fechaDevolucion;
         this.clienteId = clienteId;
@@ -30,7 +32,7 @@ public class Renta {
         this.sucursalId = sucursalId;
     }
 
-    public Renta(int id, String fechaRenta, String fechaDevolucion, int clienteId, int libroId, int sucursalId) {
+    public Renta(int id, LocalDate fechaRenta, LocalDate fechaDevolucion, int clienteId, int libroId, int sucursalId) {
         this.id = id;
         this.fechaRenta = fechaRenta;
         this.fechaDevolucion = fechaDevolucion;
@@ -47,19 +49,19 @@ public class Renta {
         this.id = id;
     }
 
-    public String getFechaRenta() {
+    public LocalDate getFechaRenta() {
         return fechaRenta;
     }
 
-    public void setFechaRenta(String fechaRenta) {
+    public void setFechaRenta(LocalDate fechaRenta) {
         this.fechaRenta = fechaRenta;
     }
 
-    public String getFechaDevolucion() {
+    public LocalDate getFechaDevolucion() {
         return fechaDevolucion;
     }
 
-    public void setFechaDevolucion(String fechaDevolucion) {
+    public void setFechaDevolucion(LocalDate fechaDevolucion) {
         this.fechaDevolucion = fechaDevolucion;
     }
 

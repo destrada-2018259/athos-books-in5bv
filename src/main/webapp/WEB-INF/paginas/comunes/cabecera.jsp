@@ -28,7 +28,7 @@
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/asociacion-autores-libros/asociacion-autores-libros.jsp">Autores y sus libros</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/intereses/intereses.jsp">Intereses del cliente</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/proveedores-sucursal/proveedores-sucursales.jsp">Proveedores de cada sucursal</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/rentas/renta.jsp">Rentas</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletRenta?accion=listar">Rentas</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
