@@ -17,7 +17,7 @@ import java.util.List;
 
 public class PersonaDaoImpl implements IPersonaDao{
     
-    private static final String SQL_SELECT = "SELECT id, nombre1, nombre2, nombre3, apellido1, apellido2 FROM personas";
+    private static final String SQL_SELECT = "SELECT id_persona, nombre1, nombre2, nombre3, apellido1, apellido2 FROM personas";
     private Connection con = null;
     private PreparedStatement pstmt = null;
     private ResultSet rs = null;
@@ -32,7 +32,7 @@ public class PersonaDaoImpl implements IPersonaDao{
             rs = pstmt.executeQuery();
             while(rs.next()) {
                 persona = new Persona(
-                    rs.getInt("id"),
+                    rs.getInt("id_persona"),
                     rs.getString("nombre1"),
                     rs.getString("nombre2"),
                     rs.getString("nombre3"),

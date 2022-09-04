@@ -19,6 +19,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/autores/autores.jsp">Autores</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/personas/personas.jsp">Personas</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/editoriales/editorial.jsp">Editoriales</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/clientes/cliente.jsp">Clientes</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/sucursales/sucursal.jsp">Sucursales</a></li>

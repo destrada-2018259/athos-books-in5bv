@@ -49,7 +49,7 @@ public class ServletPersona extends HttpServlet{
     private void listarPersona(HttpServletRequest request, HttpServletResponse response) throws IOException{
         List<Persona> data = new PersonaDaoImpl().getAll();
         HttpSession sesion = request.getSession();
-        sesion.setAttribute("ListadodePersona", data);
+        sesion.setAttribute("ListadoDePersona", data);
         response.sendRedirect("personas/personas.jsp");
     }
 }
