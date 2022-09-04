@@ -14,7 +14,7 @@ import org.apache.commons.dbcp2.BasicDataSource;
 
 public class Conexion {
 
-    private static final String HOST = "localhost";
+    private static final String HOST = "127.0.0.1";
     private static final String PORT = "3306";
     private static final String DB = "db_athos_books_in5bv";
     private static final String USER = "kinal";
