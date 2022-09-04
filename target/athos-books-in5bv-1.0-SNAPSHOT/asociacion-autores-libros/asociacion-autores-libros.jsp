@@ -5,6 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<fmt:setLocale value="es_GT" />
 <!DOCTYPE html>
 <html>
     <head>
@@ -55,39 +58,23 @@
                             <table class="table table-stripped">
                                 <thead class="table-dark">
                                     <tr>
-                                        <th>Id</th>
-                                        <td>Nombre autor</td>
-                                        <td>Genero literario</td>
-                                        <td>Nombre libro</td>
+                                        <th>Codigo libro</th>
+                                        <td>Codigo autor</td>
+                                        <td>Codigo Genero literario</td>
                                         <th>Editar</th>
                                         <th>Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+                                    <c:forEach var="asociacion" items="${listadoDeAsociacion}" > 
+                                        <tr>
+                                            <td>${asociacion.libroId}</td>
+                                            <td>${asociacion.autorId}</td>
+                                            <td>${asociacion.generoId}</td>
+                                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                            <td><i class="fa-solid fa-trash-can"></i></td>
+                                        </tr>
+                                    </c:forEach>
                                 </tbody>
                             </table>
                         </div>

@@ -1,7 +1,7 @@
 <%-- 
     Document   : editar-asociacion-autores-libros
     Created on : 25/08/2022, 16:43:34
-    Author     : informatica
+    Author     : Dorbal Emilio Aldana Ramos
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

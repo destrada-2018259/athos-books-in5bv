@@ -1,8 +1,12 @@
+com\athos\models\domain\Persona.class
+com\athos\models\dao\PersonaDaoImpl.class
 com\athos\controllers\ServletCliente.class
 com\athos\models\domain\Interes.class
-com\athos\idao\IRentaDao.class
+com\athos\models\idao\IRentaDao.class
 com\athos\controllers\ServletRenta.class
-com\athos\idao\IClienteDao.class
+com\athos\models\idao\IPersonaDao.class
+com\athos\controllers\ServletPersona.class
+com\athos\models\idao\IClienteDao.class
 com\athos\controllers\ServletInteres.class
 com\athos\models\domain\Cliente.class
 com\athos\db\Conexion.class

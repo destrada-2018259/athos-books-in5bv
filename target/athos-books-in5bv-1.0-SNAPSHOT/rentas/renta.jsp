@@ -69,17 +69,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>${renta.id}</td>
-                                        <td>${renta.fechaRenta} </td>
-                                        <td>${renta.fechaDevolucion}</td>
-                                        <td>${renta.clienteId}</td>
-                                        <td>${renta.libroId}</td>
-                                        <td>${renta.sucursalId}</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    
+                                    <c:forEach var="renta" items="${listadoDeRentas}" > 
+                                        <tr>
+                                            <td>${renta.id}</td>
+                                            <td>${renta.fechaRenta} </td>
+                                            <td>${renta.fechaDevolucion}</td>
+                                            <td>${renta.clienteId}</td>
+                                            <td>${renta.libroId}</td>
+                                            <td>${renta.sucursalId}</td>
+                                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                            <td><i class="fa-solid fa-trash-can"></i></td>
+                                        </tr>
+                                    </c:forEach>
                                 </tbody>
                             </table>
                         </div>

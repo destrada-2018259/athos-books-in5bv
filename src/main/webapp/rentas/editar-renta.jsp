@@ -1,7 +1,7 @@
 <%-- 
     Document   : editar-renta
     Created on : 25/08/2022, 16:45:10
-    Author     : informatica
+    Author     : Dorbal Emilio Aldana Ramos
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
