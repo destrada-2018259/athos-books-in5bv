@@ -14,7 +14,7 @@ public class Renta {
     private LocalDate fechaRenta;
     private LocalDate fechaDevolucion;
     private int clienteId;
-    private int libroId;
+    private String libroId;
     private int sucursalId;
 
     public Renta() {
@@ -24,7 +24,7 @@ public class Renta {
         this.id = id;
     }
 
-    public Renta(LocalDate fechaRenta, LocalDate fechaDevolucion, int clienteId, int libroId, int sucursalId) {
+    public Renta(LocalDate fechaRenta, LocalDate fechaDevolucion, int clienteId, String libroId, int sucursalId) {
         this.fechaRenta = fechaRenta;
         this.fechaDevolucion = fechaDevolucion;
         this.clienteId = clienteId;
@@ -32,7 +32,7 @@ public class Renta {
         this.sucursalId = sucursalId;
     }
 
-    public Renta(int id, LocalDate fechaRenta, LocalDate fechaDevolucion, int clienteId, int libroId, int sucursalId) {
+    public Renta(int id, LocalDate fechaRenta, LocalDate fechaDevolucion, int clienteId, String libroId, int sucursalId) {
         this.id = id;
         this.fechaRenta = fechaRenta;
         this.fechaDevolucion = fechaDevolucion;
@@ -73,11 +73,11 @@ public class Renta {
         this.clienteId = clienteId;
     }
 
-    public int getLibroId() {
+    public String getLibroId() {
         return libroId;
     }
 
-    public void setLibroId(int libroId) {
+    public void setLibroId(String libroId) {
         this.libroId = libroId;
     }
 

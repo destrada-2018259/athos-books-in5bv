@@ -40,7 +40,7 @@ public class RentaDaoImpl implements IRentaDao{
             rs = pstmt.executeQuery();
             while (rs.next())
             {
-                renta = new Renta(rs.getInt("id_renta"), rs.getDate("fecha_renta").toLocalDate(), rs.getDate("fecha_devolucion").toLocalDate(), rs.getInt("cliente_id"), rs.getInt("libro_id"), rs.getInt("sucursal_id"));
+                renta = new Renta(rs.getInt("id_renta"), rs.getDate("fecha_renta").toLocalDate(), rs.getDate("fecha_devolucion").toLocalDate(), rs.getInt("cliente_id"), rs.getString("libro_id"), rs.getInt("sucursal_id"));
                 listaRenta.add(renta);
 
             }
