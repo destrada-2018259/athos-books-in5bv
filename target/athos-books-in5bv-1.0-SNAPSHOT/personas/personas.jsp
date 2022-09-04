@@ -5,6 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> 
+<fmt:setLocale value="es_GT"/>
 <!DOCTYPE html>
 <html>
     <head>
@@ -63,27 +66,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <c:forEach var="personas" items="${ListadoDePersona}">
                                     <tr>
-                                        <td>1</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
+                                        <td>${persona.id}</td>
+                                        <td>${persona.nombre1} ${persona.nombre2} ${persona.nombre3}</td>
+                                        <td>${persona.apellido1} ${persona.apellido2}</td>
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+                                </c:forEach>
                                 </tbody>
                             </table>
                         </div>

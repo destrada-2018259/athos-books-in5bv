@@ -1,6 +1,6 @@
 
 
-package com.athos.idao;
+package com.athos.models.idao;
 
 /**
  *

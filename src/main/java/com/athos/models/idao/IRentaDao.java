@@ -1,5 +1,5 @@
 
-package com.athos.idao;
+package com.athos.models.idao;
 
 import java.util.List;
 import com.athos.models.domain.Renta;
