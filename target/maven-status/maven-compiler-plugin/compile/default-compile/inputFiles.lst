@@ -1,7 +1,9 @@
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\idao\IRentaDao.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletPersona.java
+C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\dao\ProveedorDaoImpl.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\idao\IClienteDao.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\domain\Persona.java
+C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\domain\Proveedor.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletCliente.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\dao\RentaDaoImpl.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\domain\Interes.java
@@ -15,4 +17,6 @@ C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\db\Conexi
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\idao\IPersonaDao.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletInteres.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\dao\PersonaDaoImpl.java
+C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\idao\IProveedorDao.java
+C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletProveedor.java
 C:\Users\HP\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletRenta.java
