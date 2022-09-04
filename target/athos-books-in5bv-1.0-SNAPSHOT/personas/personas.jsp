@@ -67,11 +67,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <c:forEach var="personas" items="${ListadoDePersona}">
+                                    <c:forEach var="persona" items="${ListadoDePersona}">
                                     <tr>
-                                        <td>${personas.id}</td>
-                                        <td>${personas.nombre1} ${personas.nombre2} ${personas.nombre3}</td>
-                                        <td>${personas.apellido1} ${personas.apellido2}</td>
+                                        <td>${persona.id}</td>
+                                        <td>${persona.nombre1} ${persona.nombre2} ${persona.nombre3}</td>
+                                        <td>${persona.apellido1} ${persona.apellido2}</td>
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
                                     </tr>
