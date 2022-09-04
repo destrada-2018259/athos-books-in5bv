@@ -3,7 +3,7 @@ package com.athos.models.dao;
 
 import com.athos.db.Conexion;
 import com.athos.models.domain.Renta;
-import com.athos.idao.IRentaDao;
+import com.athos.models.idao.IRentaDao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
