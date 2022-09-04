@@ -1,14 +1,15 @@
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\system\Principal.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\db\Conexion.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\models\domain\Interes.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\controllers\ServletEditorial.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\idao\IClienteDao.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\models\dao\RentaDaoImpl.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\models\domain\Editorial.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\controllers\ServletCliente.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\idao\IRentaDao.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\controllers\ServletRenta.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\models\dao\ClienteDaoImpl.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\models\domain\Renta.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\controllers\ServletInteres.java
-C:\Users\USUARIO\Documents\NetBeansProjects\athos-books-in5bv\src\main\java\com\athos\models\domain\Cliente.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\domain\Cliente.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\dao\RentaDaoImpl.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletRenta.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\system\Principal.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletEditorial.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\idao\IRentaDao.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\db\Conexion.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletCliente.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\idao\IClienteDao.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletAutores.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\dao\ClienteDaoImpl.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\domain\Editorial.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\controllers\ServletInteres.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\domain\Interes.java
+C:\Users\brayan cabrera\Documents\GitHub\athos-books-in5bv\src\main\java\com\athos\models\domain\Renta.java
