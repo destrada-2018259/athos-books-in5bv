@@ -19,11 +19,12 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/autores/autores.jsp">Autores</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletEmpleado?accion=listar">Empleados</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/editoriales/editorial.jsp">Editoriales</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/clientes/cliente.jsp">Clientes</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/sucursales/sucursal.jsp">Sucursales</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletSucursal?accion=listar">Sucursales</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/proveedores/proveedor.jsp">Proveedores</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/horarios/horario.jsp">Horarios</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletHorario?accion=listar">Horarios</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/libros/libro.jsp">Libros</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/asociacion-autores-libros/asociacion-autores-libros.jsp">Autores y sus libros</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/intereses/intereses.jsp">Intereses del cliente</a></li>
