@@ -5,7 +5,11 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> 
+<fmt:setLocale value="es_GT"/>
 <!DOCTYPE html>
+<html lang="es">
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -61,53 +65,25 @@
                                         <th>Stock</th>
                                         <th>Edición</th>
                                         <th>Editorial</th>
-                                        <th>Género</th>
-                                        <th>Autor</th>
                                         <th>Proveedor</th>
                                         <th>Editar</th>
                                         <th>Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro5</td>
-                                        <td>registro6</td>
-                                        <td>registro7</td>
-                                        <td>registro8</td>
+                                    <c:forEach var="libro" items="${ListadoDeLibro}">
+                                        <tr>
+                                        <td>${libro.isbn}</td>
+                                        <td>${libro.nombre}</td>
+                                        <td>${libro.prologo}</td>
+                                        <td>${libro.stock}</td>
+                                        <td>${libro.edicion}</td>
+                                        <td>${libro.editorialId}</td>
+                                        <td>${libro.proveedorId}</td>
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro5</td>
-                                        <td>registro6</td>
-                                        <td>registro7</td>
-                                        <td>registro8</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro5</td>
-                                        <td>registro6</td>
-                                        <td>registro7</td>
-                                        <td>registro8</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+                                    </c:forEach>
                                 </tbody>
                             </table>
                         </div>
