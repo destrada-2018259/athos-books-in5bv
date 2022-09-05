@@ -57,6 +57,6 @@ public class ServletIntereses extends HttpServlet{
         List<Interes> data = new InteresDaoImpl().getAll();
         HttpSession sesion = request.getSession();
         sesion.setAttribute("listadoDeIntereses", data);
-        response.sendRedirect("intereses/interes.jsp");
+        response.sendRedirect("intereses/intereses.jsp");
     }
 }
