@@ -65,7 +65,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <c:forEach var="interes" items="listadoDeIntereses">
+                                    <c:forEach var="interes" items="${listadoDeIntereses}">
                                         <tr>
                                         <td>${interes.idInteres}</td>
                                         <td>${interes.generoLiterarioId}</td>
@@ -73,7 +73,7 @@
 
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+                                        </tr>
                                     </c:forEach>
                                     
 

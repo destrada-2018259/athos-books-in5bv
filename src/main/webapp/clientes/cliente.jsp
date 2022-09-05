@@ -68,7 +68,7 @@
                                 </thead>
                                 <tbody>
 
-                                    <c:forEach var="Cliente" items="listadoDeClientes">
+                                    <c:forEach var="cliente" items="${listadoDeClientes}">
                                         <tr>
                                             <td>${cliente.idCliente}</td>
                                             <td>${cliente.direccion}</td>
