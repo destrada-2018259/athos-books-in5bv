@@ -40,7 +40,7 @@ public class ProveedorDaoImpl implements IProveedorDao{
                 listaProveedores.add(proveedor);
             }
         }catch(SQLException e) {
-            System.err.println("Se produjo un error al intentar listar los registros de la entidad Proveedores");
+            System.err.println("Se produjo un error al intentar listar los registros de la tabla proveedores");
             e.printStackTrace(System.out);
         }catch(Exception e) {
             e.printStackTrace(System.out);
