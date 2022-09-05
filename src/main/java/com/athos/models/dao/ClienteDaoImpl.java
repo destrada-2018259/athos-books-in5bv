@@ -29,7 +29,7 @@ import java.util.List;
 
 public class ClienteDaoImpl implements IClienteDao{
 
-        private static final String SQL_SELECT = "SELECT id_cliente, direccion, email_cliente, telefono_cliente, nit, persona_id FROM clientes";
+    private static final String SQL_SELECT = "SELECT id_cliente, direccion, email_cliente, telefono_cliente, nit, persona_id FROM clientes";
     private Connection con = null;
     private PreparedStatement pstmt = null;
     private ResultSet rs = null;

@@ -38,6 +38,10 @@ public class Sucursales {
         this.idHorario = idHorario;
         this.idProovedor = idProovedor;
     }
+
+    public Sucursales(int aInt, String string, String string0, String string1, String string2, int aInt0, int aInt1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     //GETTERS
 

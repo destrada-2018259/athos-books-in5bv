@@ -57,6 +57,6 @@ public class ServletCliente extends HttpServlet{
         List<Cliente> data = new ClienteDaoImpl().getAll();
         HttpSession sesion = request.getSession();
         sesion.setAttribute("listadoDeClientes", data);
-        response.sendRedirect("clientes/cliente.jsp");
+        response.sendRedirect("sucursales/sucursal.jsp");
     }
 }

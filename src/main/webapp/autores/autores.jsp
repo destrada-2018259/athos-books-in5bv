@@ -6,7 +6,11 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> 
+<fmt:setLocale value="es_GT"/>
 <!DOCTYPE html>
+<html lang="es"> 
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -65,30 +69,16 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <c:forEach var="autores" items="${ListadeAutores}">
                                     <tr>
-                                        <td>1</td>
-                                        <th>Nombre Completo</th>
-                                        <th>Pais Origen</th>
-                                        <th>Fecha de Nacimento</th>
+                                        <td>${autores.id}</td>
+                                        <td>${autores.paisOrigen}</td>
+                                        <td>${autores.fechaNacimiento}</td>
+                                        <td>${autores.personaId}</td>
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <th>Nombre Completo</th>
-                                        <th>Pais Origen</th>
-                                        <th>Fecha de Nacimento</th>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <th>Nombre Completo</th>
-                                        <th>Pais Origen</th>
-                                        <th>Fecha de Nacimento</th>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+                                    </c:forEach>
                                 </tbody>
                             </table>
                         </div>

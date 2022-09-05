@@ -18,16 +18,11 @@ public class Autores {
     private int personaId;
 
     public Autores() {
+        
     }
 
     public Autores(int idAutores) {
         this.idAutores = idAutores;
-    }
-
-    public Autores(String PaisOrigen, LocalDate FechaNacimiento, int personaId) {
-        this.PaisOrigen = PaisOrigen;
-        this.FechaNacimiento = FechaNacimiento;
-        this.personaId = personaId;
     }
 
     public Autores(int idAutores, String PaisOrigen, LocalDate FechaNacimiento, int personaId) {
@@ -36,6 +31,18 @@ public class Autores {
         this.FechaNacimiento = FechaNacimiento;
         this.personaId = personaId;
     }
+
+    public Autores(String PaisOrigen, LocalDate FechaNacimiento, int personaId) {
+        this.PaisOrigen = PaisOrigen;
+        this.FechaNacimiento = FechaNacimiento;
+        this.personaId = personaId;
+    }
+
+    public Autores(int aInt, String string, String string0, String string1, String string2, int aInt0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    
 
     //GETTERS
     public int getIdAutores() {
