@@ -14,6 +14,9 @@ import java.util.List;
 import com.athos.models.domain.Cliente;
 
 public interface IClienteDao {
-    
+        public List<Cliente> getAll();
+        public boolean add(Cliente cliente);
+        public boolean update(Cliente cliente);
+        public boolean delete(Cliente cliente);
 
 }

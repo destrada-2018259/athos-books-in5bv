@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,15 +19,15 @@
         <script src="../assets/js/FontAwesome.js"></script>
     </head>
     <body>
-        
-            <div class="row">
-                <div class="col-12">
-                    <header>
-                        <p>Clientes</p>
-                    </header>
-                </div>
+
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <p>Clientes</p>
+                </header>
             </div>
-      
+        </div>
+
 
         <jsp:include page="../WEB-INF/paginas/comunes/cabecera.jsp" />
         <main>
@@ -56,42 +57,31 @@
                                 <thead class="table-dark">
                                     <tr>
                                         <th>#</th>
-                                        <th>Nombre Completo</th>
-                                        <th>Direccion</th>
-                                        <th>Correo Electrónico</th>
                                         <th>Dirección</th>
+                                        <th>Email</th>
+                                        <th>Telefono</th>
+                                        <th>Nit</th>
+                                        <th>Persona Id</th>
                                         <th>Editar</th>
                                         <th>Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+
+                                    <c:forEach var="cliente" items="${listadoDeClientes}">
+                                        <tr>
+                                            <td>${cliente.idCliente}</td>
+                                            <td>${cliente.direccion}</td>
+                                            <td>${cliente.emailCliente}</td>
+                                            <td>${cliente.telefonoCliente}</td>
+                                            <td>${cliente.nit}</td>
+                                            <td>${cliente.personaId}</td>
+                                            <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                            <td><i class="fa-solid fa-trash-can"></i></td>
+                                        </tr>
+                                    </c:forEach>
+
+
                                 </tbody>
                             </table>
                         </div>

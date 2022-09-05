@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -68,42 +69,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <c:forEach var="editorial" items="listadoDeEditoriales">
+                                        
+                                    </c:forEach>
                                     <tr>
-                                        <td>1</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
+                                        <td>${editorial.id}</td>
+                                        <td>${editorial.nombreEditorial}</td>
+                                        <td>${editorial.sedeEditorial}</td>
+                                        <td>${editorial.direccionEditorial}</td>
+                                        <td>${editorial.telefonoEditorial}</td>
+                                        <td>${editorial.emailEditorial}</td>
+                                        <td>${editorial.sitioWeb}</td>
+                                        <td>${editorial.fundacion}</td>
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>

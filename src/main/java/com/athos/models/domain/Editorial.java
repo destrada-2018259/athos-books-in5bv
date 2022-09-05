@@ -10,7 +10,7 @@ package com.athos.models.domain;
  *
  * Codigo Tecnico: IN5BV
  */
-import java.time.Year;
+import java.time.LocalDate;
 
 public class Editorial {
 
@@ -21,16 +21,17 @@ public class Editorial {
     private String telefonoEditorial;
     private String emailEditorial;
     private String sitioWeb;
-    private Year fundacion;
+    private LocalDate fundacion;
 
     public Editorial() {
+        
     }
 
     public Editorial(int id) {
         this.id = id;
     }
 
-    public Editorial(String nombreEditorial, String sedeEditorial, String direccionEditorial, String telefonoEditorial, String emailEditorial, String sitioWeb, Year fundacion) {
+    public Editorial(String nombreEditorial, String sedeEditorial, String direccionEditorial, String telefonoEditorial, String emailEditorial, String sitioWeb, LocalDate fundacion) {
         this.nombreEditorial = nombreEditorial;
         this.sedeEditorial = sedeEditorial;
         this.direccionEditorial = direccionEditorial;
@@ -40,7 +41,7 @@ public class Editorial {
         this.fundacion = fundacion;
     }
 
-    public Editorial(int id, String nombreEditorial, String sedeEditorial, String direccionEditorial, String telefonoEditorial, String emailEditorial, String sitioWeb, Year fundacion) {
+    public Editorial(int id, String nombreEditorial, String sedeEditorial, String direccionEditorial, String telefonoEditorial, String emailEditorial, String sitioWeb, LocalDate fundacion) {
         this.id = id;
         this.nombreEditorial = nombreEditorial;
         this.sedeEditorial = sedeEditorial;
@@ -107,11 +108,11 @@ public class Editorial {
         this.sitioWeb = sitioWeb;
     }
 
-    public Year getFundacion() {
+    public LocalDate getFundacion() {
         return fundacion;
     }
 
-    public void setFundacion(Year fundacion) {
+    public void setFundacion(LocalDate fundacion) {
         this.fundacion = fundacion;
     }
 

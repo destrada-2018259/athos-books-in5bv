@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -56,38 +57,26 @@
                                 <thead class="table-dark">
                                     <tr>
                                         <th>#</th>
-                                        <th>Nombre del Cliente</th>
-                                        <th>Género de su agrado</th>
+                                        <th>Id Genero literario</th>
+                                        <th>id Cliente</th>
 
                                         <th>Editar</th>
                                         <th>Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
+                                    <c:forEach var="interes" items="${listadoDeIntereses}">
+                                        <tr>
+                                        <td>${interes.idInteres}</td>
+                                        <td>${interes.generoLiterarioId}</td>
+                                        <td>${interes.clienteId}</td>
 
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
+                                        </tr>
+                                    </c:forEach>
+                                    
 
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
