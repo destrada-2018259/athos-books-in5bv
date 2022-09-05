@@ -5,6 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<fmt:setLocale value="es_GT" />
 <!DOCTYPE html>
 <html>
     <head>
@@ -55,47 +58,29 @@
                             <table class="table table-stripped">
                                 <thead class="table-dark">
                                     <tr>
-                                        <th>#</th>
+                                        <th>ID</th>
                                         <th>Nombre Sucursal</th>
                                         <th>Dirección</th>
                                         <th>telefono</th>
-                                        <th>Horarios</th>
+                                        <th>Horario</th>
                                         <th>Proovedor</th>
                                         <th>Editar</th>
                                         <th>Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro5</td>
+                                    <c:forEach var="sucursal" items="${listadoDeSucursales}" >
+                                       <tr>
+                                        <td>${sucursal.id}</td>
+                                        <td>${sucursal.nombre}</td>
+                                        <td>${sucursal.direccion}</td>
+                                        <td>${sucursal.telefono}</td>
+                                        <td>${sucursal.idHorario}</td>
+                                        <td>${sucursal.idProveedor}</td>
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro5</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>registro1</td>
-                                        <td>registro2</td>
-                                        <td>registro3</td>
-                                        <td>registro4</td>
-                                        <td>registro5</td>
-                                        <td><i class="fa-solid fa-pen-to-square"></i></td>
-                                        <td><i class="fa-solid fa-trash-can"></i></td>
-                                    </tr>
+                                    </tr> 
+                                    </c:forEach>
                                 </tbody>
                             </table>
                         </div>
