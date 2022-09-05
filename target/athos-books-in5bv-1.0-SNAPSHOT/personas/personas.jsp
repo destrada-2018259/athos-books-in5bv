@@ -9,6 +9,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> 
 <fmt:setLocale value="es_GT"/>
 <!DOCTYPE html>
+<html lang="es">
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -66,7 +67,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <c:forEach var="personas" items="${ListadoDePersona}">
+                                    <c:forEach var="persona" items="${ListadoDePersona}">
                                     <tr>
                                         <td>${persona.id}</td>
                                         <td>${persona.nombre1} ${persona.nombre2} ${persona.nombre3}</td>

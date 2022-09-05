@@ -12,14 +12,14 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.ServletException;
 
-import com.athos.models.domain.Persona;
-import com.athos.models.dao.PersonaDaoImpl;
+import com.athos.models.domain.Proveedor;
+import com.athos.models.dao.ProveedorDaoImpl;
 
 import java.util.List;
 import java.io.IOException;
 
-@WebServlet("/ServletPersona")
-public class ServletPersona extends HttpServlet{
+@WebServlet("/ServletProveedor")
+public class ServletProveedor extends HttpServlet{
     
     @Override
     protected void doPost (HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -34,7 +34,7 @@ public class ServletPersona extends HttpServlet{
         if(accion != null) {
             switch(accion) {
                 case "listar":
-                    listarPersona(request, response);
+                    listarProveedores(request, response);
                 break;
                 
                 case "editar":
@@ -46,10 +46,10 @@ public class ServletPersona extends HttpServlet{
         }
     }
     
-    private void listarPersona(HttpServletRequest request, HttpServletResponse response) throws IOException{
-        List<Persona> data = new PersonaDaoImpl().getAll();
+    private void listarProveedores(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        List<Proveedor> data = new ProveedorDaoImpl().getAll();
         HttpSession sesion = request.getSession();
-        sesion.setAttribute("ListadoDePersona", data);
-        response.sendRedirect("personas/personas.jsp");
+        sesion.setAttribute("ListadoDeProveedores", data);
+        response.sendRedirect("proveedores/proveedor.jsp"); 
     }
 }
