@@ -70,9 +70,7 @@
                                 </thead>
                                 <tbody>
                                     <c:forEach var="editorial" items="listadoDeEditoriales">
-                                        
-                                    </c:forEach>
-                                    <tr>
+                                        <tr>
                                         <td>${editorial.id}</td>
                                         <td>${editorial.nombreEditorial}</td>
                                         <td>${editorial.sedeEditorial}</td>
@@ -84,6 +82,8 @@
                                         <td><i class="fa-solid fa-pen-to-square"></i></td>
                                         <td><i class="fa-solid fa-trash-can"></i></td>
                                     </tr>
+                                    </c:forEach>
+                                    
 
                                 </tbody>
                             </table>

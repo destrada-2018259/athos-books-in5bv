@@ -18,18 +18,17 @@
                         Entidades
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/autores/autores.jsp">Autores</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletAutores?accion=listar">Autores</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletPersona?accion=listar">Personas</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/editoriales/editorial.jsp">Editoriales</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/clientes/cliente.jsp">Clientes</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/sucursales/sucursal.jsp">Sucursales</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletEditorial?accion=listar">Editoriales</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletCliente?accion=listar">Clientes</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletSucursales?accion=listar">Sucursales</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletProveedor?accion=listar">Proveedores</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/horarios/horario.jsp">Horarios</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletHorario?accion=listar">Horarios</a></li>
                         <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletLibro?accion=listar">Libros</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/asociacion-autores-libros/asociacion-autores-libros.jsp">Autores y sus libros</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/intereses/intereses.jsp">Intereses del cliente</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/proveedores-sucursal/proveedores-sucursales.jsp">Proveedores de cada sucursal</a></li>
-                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/rentas/renta.jsp">Rentas</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletAsociacion?accion=listar">Autores y sus libros</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletIntereses=accion=listar">Intereses del cliente</a></li>
+                        <li><a class="dropdown-item" href="${pageContext.request.contextPath}/ServletRenta?accion=listar">Rentas</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
